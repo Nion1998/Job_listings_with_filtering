@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFFAFB;
+    font-family: "Spartan", sans-serif;
+}
+
+
+
+.tag-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 4px rgba(91, 164, 164, .2);
+    height: 4.5rem;
+
+}
+
+.job_card {
+
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 4px rgba(91, 164, 164, .2);
+    display: flex;
+    margin: 1.3rem 0;
+    padding: 1.5rem 2rem;
+    position: relative;
+
+}
+
+.job_card.new_card {
+    border-left: 3px solid #5BA4A4 !important;
+
+
+}
+
+
+
+.job_card img {
+    height: 100px;
+    width: 100px;
+
+}
+
+.cname {
+    color: #5BA4A4;
+}
+
+.new {
+    background-color: #5BA4A4;
+    color: #EFFAFB;
+    font-weight: 100;
+    padding: 0.2rem 0.4rem .2rem .4rem;
+    border-radius: 1rem;
+    font-size: .65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.featured {
+    background-color: black;
+    color: #EFFAFB;
+    font-weight: 100;
+    padding: 0.2rem 0.4rem .2rem .4rem;
+    border-radius: 1rem;
+    font-size: .65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.pasition {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0.5rem 0;
+}
+
+.details {
+    color: #7b8e8e;
+}
+
+.filter-btn button {
+    border: none;
+    background-color: #5ba4a45e;
+    color: #5BA4A4;
+    font-weight: 100;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0.6rem;
+
+}
+
+.filter-btn button:hover {
+
+
+    background-color: #5ba4a4;
+    color: #ffffff;
+
+}
+
+.tag-btn button {
+    border: none;
+    background-color: #5ba4a45e;
+    color: #5BA4A4;
+    font-weight: 100;
+    padding: 5px 30px 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0.6rem;
+    position: relative;
+}
+
+.tag-btn button span {
+    position: absolute;
+    background-color: #5ba4a4;
+    border-radius: 0 5px 5px 0;
+    height: 29.3px;
+    width: 25px;
+    top: 0;
+    right: 0;
+    color: #ffffff;
+}
+
+.tag-btn #text {
+    display: none;
+}
+
+.tag-container a {
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #5BA4A4;
+}
+
+.tag-container a:hover {
+    text-decoration: underline;
+    color: #5BA4A4;
+}
+
+
+@media (max-width:991px) {
+    .job_card {
+        padding: 4rem 2rem 1.5rem 2rem;
+        margin-top: 50px;
+    }
+
+    .job_card img {
+        height: 90px;
+        width: 90px;
+        position: absolute;
+        top: -40px;
+        left: 30px;
+        margin-left: 0;
+    }
+
+    .filter-btn button {
+        margin: 0.2rem;
+    }
+
+
+    .pasition {
+        cursor: pointer;
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 0.7rem 0;
+    }
+}
+
+@media (max-width:767px) {
+
+
+    .filter-btn {
+        margin: 15px 20px;
+        padding: 15px 0px;
+        border-top: 2px solid black;
+    }
+
+    .filter-btn button {
+        margin: 0.4rem;
+    }
+
+    header img {
+        height: 100px;
+
+    }
+
+    .tag-btn {
+        overflow: auto;
+        margin-right: 5px;
+    }
+
+
+}
